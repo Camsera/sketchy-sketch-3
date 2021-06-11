@@ -8,12 +8,15 @@ body {
 .header{
     display:flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+
 }
 
-.header h1{
+.header h1, .header h4{
     font-family: Arial, Helvetica, sans-serif;
     color: #ccc;
+    margin: 5px 0px;
 }
 
 .input-container{
@@ -21,6 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 5px 0px;
 }
 
 .input-container>*{
@@ -53,7 +57,7 @@ body {
 }
 
 .grid-element {
-    background-color: #ccc;
+    background-color: #fff;
 }
 
 .input-wrapper{
@@ -80,10 +84,31 @@ body {
     background-image: linear-gradient(#ccc, #999, #ccc);
 }
 
+.clear-btn{
+    width: 75px !important;
+    height: 30px;
+}
+
 .clear-btn:hover{
     transform: scale(1.05);
 }
 
 .clear-btn:active{
+    background-image: linear-gradient(#aaa, #ccc);
+}
+
+.black-white-btn:hover{
+    transform: scale(1.05);
+}
+
+.black-white-btn:active{
+    background-image: linear-gradient(#aaa, #ccc);
+}
+
+.rgb-btn:hover{
+    transform: scale(1.05);
+}
+
+.rgb-btn:active{
     background-image: linear-gradient(#aaa, #ccc);
 }
