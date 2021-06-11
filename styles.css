@@ -1,0 +1,89 @@
+
+body {
+    background-image: url("assets/black-texture.jpg");
+    background-color: #ccc;
+    
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
+}
+
+.input-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container>*{
+    padding: 0px 5px;
+}
+
+.input-container output{
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
+    padding: 0px 10px;
+}
+
+.sketch-wrapper {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 2rem auto;
+}
+
+.sketch-container{
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    height: 500px;
+    width: 500px;
+}
+
+.grid-element {
+    background-color: #ccc;
+}
+
+.input-wrapper{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.button-div{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.button-div> button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    background-image: linear-gradient(#ccc, #999, #ccc);
+}
+
+.clear-btn:hover{
+    transform: scale(1.05);
+}
+
+.clear-btn:active{
+    background-image: linear-gradient(#aaa, #ccc);
+}

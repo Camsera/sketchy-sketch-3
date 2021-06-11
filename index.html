@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sketchy-Sketch</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header class="header">
+        <h1>Sketchy-Sketch</h1>
+    </header>
+    <body>
+        <div class="input-wrapper">
+            <div class="button-div">
+                <button class="clear-btn">Clear</button>
+                <button class="black-white-btn">B&W</button>
+                <button class="rgb-btn">RGB</button>
+            </div>
+            <div class="input-container">
+                <input type="range" min="2" max="100" value="16" class="slider" id="slide" step="1" oninput="outputUpdate(value)">
+                <output for="slide" id="box-amount">16</output>
+            </div>
+        </div>
+        <div class="sketch-wrapper">
+            <div class="sketch-container">
+                
+            </div>
+        </div>
+        <script src="sketch.js"></script>
+    </body>
+</html>
